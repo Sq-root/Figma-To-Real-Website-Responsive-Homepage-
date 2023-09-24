@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange-color: #da722c;
+    --dark-blue-color: #023047;
+    --dark-color: #070917;
+    --light-color: #e8f7fb;
+    --light-blue-color: #6f7dfb;
+    --primary-font-family: "Poppins", sans-serif;
+    --secondary-font-family: "Raleway", sans-serif;
+}
+
+/* Utility Class  */
+
+body {
+    font-family: var(--primary-font-family);
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.btn {
+    border-radius: 24px;
+    display: inline-block;
+    padding: 16px 32px;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.light {
+    background-color: var(--orange-color);
+}
+
+.dark {
+    background-color: var(--dark-blue-color);
+}
+
+.icon-btn::before {
+    content: url('../img/Vector.svg');
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/
+
+::-webkit-scrollbar {
+    width: 0.725rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #6F7DFB 100%, #26308C 0%);
+}
+
+/* Header  */
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+}
+
+/* nabar  */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 36px;
+    z-index: 100;
+
+}
+
+.navbar .logo {
+    color: #FFF;
+    font-family: var(--secondary-font-family);
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar ul li a {
+    color: var(--light-color);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* hero-section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: var(--light-color);
+}
+
+.hero-section .left h1 {
+    font-family: var(--secondary-font-family);
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 125%;
+    /* 62.5px */
+}
+
+/* achievement-cards */
+.achievement-cards {
+    display: none;
+}
