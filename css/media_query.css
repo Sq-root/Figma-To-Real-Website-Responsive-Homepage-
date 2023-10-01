@@ -133,9 +133,10 @@
             align-items: center;
             position: fixed;
             width: 600px;
-            top: 36px;
+            top: 7px;
             z-index: 100;
             transition: all 500ms ease;
+            right: 0px;
         }
 
         .mobile-nav.scrolled {
@@ -216,7 +217,7 @@
         }
 
         .hero-section .right {
-            transform: translateX(45px);
+            transform: translateX(30px);
         }
 
         header {
