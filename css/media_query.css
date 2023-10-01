@@ -114,6 +114,7 @@
             gap: 80px;
         }
 
+
         .course-section .course-cards-container .course-cards h3 {
             font-size: 24px;
         }
@@ -193,5 +194,130 @@
     }
 
     @media screen and (max-width:700px) {
+        h2 {
+            font-size: 30px;
+        }
+
+        .hero-section .left h1 {
+            font-size: 36px;
+            line-height: 125%;
+        }
+
+        .wrapper {
+            padding: 0 32px;
+        }
+
+        .hero-section .left p {
+            width: 100%;
+        }
+
+        .hero-section .right img {
+            height: 359px;
+        }
+
+        .hero-section .right {
+            transform: translateX(45px);
+        }
+
+        header {
+            height: 100vh;
+            width: 100%;
+        }
+
+        nav.mobile-nav {
+            padding: 32px;
+            width: 100%;
+        }
+
+        nav.mobile-nav.scrolled {
+            padding: 8px 32px;
+        }
+
+        .mobile-menu-container .close-icon {
+            right: 32px;
+        }
+
+        .app-section .app-buttons {
+            flex-direction: column;
+        }
+
+
+
+        .testimonial-section .left .progressline {
+            top: 239px;
+            left: 79px;
+        }
+
+        .testimonial-section .testimonial-card .info h4 {
+            font-size: 18px;
+        }
+
+        .testimonial-section .testimonial-card .info p {
+            font-size: 14px;
+        }
+
+        .testimonial-section .testimonial-card img {
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .course-section .wrapper {
+            padding: 0;
+        }
+
+        .course-section .course-cards {
+            width: 100%;
+            padding: 0px 20px;
+        }
+
+        .course-section .course-cards .info h3 {
+            text-align: left;
+            width: 70%;
+        }
+
+        .course-section .course-cards .card-img {
+            height: 220px;
+        }
+
+
+        .course-cards-container {
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        footer .links-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 32px;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        footer .links-container .links {
+            margin-bottom: 20px;
+        }
+
+        footer .links-container .links ul,
+        .social,
+        form {
+            /* padding-left: 20px; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer .links-container .links .social {
+            display: block;
+        }
+
+        .copyright {
+            font-size: 14px;
+            text-align: center;
+        }
+
 
     }
