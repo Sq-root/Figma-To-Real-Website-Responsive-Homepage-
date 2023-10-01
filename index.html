@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media_query.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,6 +18,7 @@
     <!-- header section  -->
     <header>
         <div class="wrapper">
+            <!-- Desktop Nabar  -->
             <nav class="navbar">
                 <div class="logo">
                     GD.
@@ -28,6 +30,29 @@
                     <li><a href="#" class="btn dark ">Enroll Now</a></li>
                 </ul>
             </nav>
+
+            <nav class="mobile-nav">
+                <div class="logo">
+                    GD.
+                </div>
+                <div id="menuicon" class="menu-icon">
+                    <img src="./img/MenuAlt4Outline.svg" alt="">
+                </div>
+            </nav>
+
+            <!-- Mobile side Navbar  -->
+            <div class="mobile-menu-container">
+                <div class="close-icon">
+                    <img src="./img/close.svg" alt="">
+                </div>
+                <ul>
+                    <li><a href="#" class="">About</a></li>
+                    <li><a href="#" class="">Services</a></li>
+                    <li><a href="#" class="">Our Work</a></li>
+                    <li><a href="#" class="btn dark ">Enroll Now</a></li>
+                </ul>
+            </div>
+
             <div class="hero-section">
                 <div class="left">
                     <h1>Learn the art of <br>
@@ -41,27 +66,28 @@
                 </div>
             </div>
 
-            <div class="achievement-cards">
-                <div class="achievement-card students-enrolled">
-                    <div class="content">
-                        <div>
-                            <h3>32K</h3>
+            <!-- <div class="achievement-cards">
+                    <div class="achievement-card students-enrolled">
+                        <div class="content">
+                            <div>
+                                <h3>32K</h3>
+                            </div>
+                            <p>Students Enrolled</p>
                         </div>
-                        <p>Students Enrolled</p>
+                        <div class="bg"></div>
                     </div>
-                    <div class="bg"></div>
-                </div>
-                <div class="achievement-card overall-Rating">
-                    <div class="content">
-                        <div class="info">
-                            <h3>4.7</h3>
-                            <img src="./img/Vector (1).png" alt="">
+                    <div class="achievement-card overall-Rating">
+                        <div class="content">
+                            <div class="info">
+                                <h3>4.7</h3>
+                                <img src="./img/Vector (1).png" alt="">
+                            </div>
+                            <p>Overall Rating</p>
                         </div>
-                        <p>Overall Rating</p>
+                        <div class="bg"></div>
                     </div>
-                    <div class="bg"></div>
-                </div>
-            </div>
+                </div> -->
+
         </div>
     </header>
 
@@ -95,8 +121,9 @@
                 <h2>What our students say</h2>
                 <p>All students get access to all the videos and also the source code of the projects.</p>
                 <p> You will also have access to a private Discord channel where you can discuss your doubts.</p>
-                <a href="#" class="btn light">Learn More</a>
+                <a href="#" class="btn light desktop-btn">Learn More</a>
             </div>
+            <a href="#" class="btn light mobile-btn">Learn More</a>
         </section>
     </div>
 

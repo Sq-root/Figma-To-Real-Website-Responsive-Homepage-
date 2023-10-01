@@ -1,0 +1,197 @@
+    @media screen and (max-width:1100px) {
+        .btn {
+            padding: 12px 32px;
+        }
+
+        h2 {
+            font-size: 40px
+        }
+
+        .wrapper {
+            padding: 0 100px;
+        }
+
+        .navbar {
+            width: 100%;
+            right: 0;
+            left: 0;
+            padding: 36px 100px;
+        }
+
+        .navbar.scrolled {
+            padding: 16px 100px;
+        }
+
+        header {
+            max-height: 1100px;
+        }
+
+        header .wrapper,
+        .hero-section {
+            height: 100%;
+        }
+
+
+        .hero-section {
+            flex-direction: column;
+            padding-top: 100px;
+        }
+
+        .hero-section .left {
+            width: 100%;
+        }
+
+        .hero-section .right {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .hero-section .achievement-card {
+            position: relative;
+            padding: 80px;
+        }
+
+        .hero-section .right img {
+            height: 580px;
+        }
+
+        .achievement-card.students-enrolled,
+        .achievement-card.overall-Rating {
+            left: unset;
+            top: unset;
+        }
+
+        .testimonial-section .left .testimonial-card:last-child {
+            transform: translateX(0px);
+        }
+
+        .testimonial-section {
+            flex-direction: column;
+            align-items: stretch;
+            margin-bottom: 40px;
+            gap: 50px;
+        }
+
+        .testimonial-section .left .testimonial-card {
+            width: 100%;
+            /* margin-bottom: 40px; */
+        }
+
+        .testimonial-section .left .progressline {
+            top: 160px;
+            left: 79px;
+        }
+
+        .desktop-btn {
+            display: none;
+        }
+
+        .testimonial-section .left {
+            order: 2;
+        }
+
+        .testimonial-section .right {
+            order: 1;
+        }
+
+        .testimonial-section .mobile-btn {
+            display: inline-flex;
+            align-self: flex-end;
+            order: 3;
+        }
+
+        .testimonial-section .right p {
+            display: inline;
+        }
+
+        .testimonial-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .course-cards-container {
+            flex-direction: column;
+            gap: 80px;
+        }
+
+        .course-section .course-cards-container .course-cards h3 {
+            font-size: 24px;
+        }
+
+
+    }
+
+    @media screen and (max-width:800px) {
+        .navbar {
+            display: none;
+        }
+
+        .mobile-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 600px;
+            top: 36px;
+            z-index: 100;
+            transition: all 500ms ease;
+        }
+
+        .mobile-nav.scrolled {
+            background-color: var(--dark-color);
+            box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+            border-radius: 0 0 8px 8px;
+            top: 0;
+            padding: 8px 100px;
+        }
+
+        .mobile-menu-container {
+            position: fixed;
+            top: 0px;
+            left: 100%;
+            height: 100vh;
+            width: 100%;
+            background-color: var(--dark-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 400ms ease;
+            z-index: 200;
+        }
+
+        .mobile-menu-container .close-icon {
+            display: block;
+            position: fixed;
+            top: 32px;
+            right: 100px;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 400ms ease;
+            opacity: 0;
+        }
+
+        .open {
+            left: 0px;
+        }
+
+        .mobile-menu-container.open .close-icon {
+            opacity: 1;
+            pointer-events: all;
+
+        }
+
+        .mobile-menu-container ul li {
+            margin: 30px 0;
+            text-align: center;
+
+        }
+
+        .mobile-menu-container ul li a {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width:700px) {
+
+    }
