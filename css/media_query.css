@@ -1,324 +1,545 @@
-    @media screen and (max-width:1100px) {
-        .btn {
-            padding: 12px 32px;
-        }
-
-        h2 {
-            font-size: 40px
-        }
-
-        .wrapper {
-            padding: 0 100px;
-        }
-
-        .navbar {
-            width: 100%;
-            right: 0;
-            left: 0;
-            padding: 36px 100px;
-        }
-
-        .navbar.scrolled {
-            padding: 16px 100px;
-        }
-
-        header {
-            max-height: 1100px;
-        }
-
-        header .wrapper,
-        .hero-section {
-            height: 100%;
-        }
-
-
-        .hero-section {
-            flex-direction: column;
-            padding-top: 100px;
-        }
-
-        .hero-section .left {
-            width: 100%;
-        }
-
-        .hero-section .right {
-            position: absolute;
-            bottom: 0px;
-            right: 0px;
-        }
-
-        .hero-section .achievement-card {
-            position: relative;
-            padding: 80px;
-        }
-
-        .hero-section .right img {
-            height: 580px;
-        }
-
-        .achievement-card.students-enrolled,
-        .achievement-card.overall-Rating {
-            left: unset;
-            top: unset;
-        }
-
-        .testimonial-section .left .testimonial-card:last-child {
-            transform: translateX(0px);
-        }
-
-        .testimonial-section {
-            flex-direction: column;
-            align-items: stretch;
-            margin-bottom: 40px;
-            gap: 50px;
-        }
-
-        .testimonial-section .left .testimonial-card {
-            width: 100%;
-            /* margin-bottom: 40px; */
-        }
-
-        .testimonial-section .left .progressline {
-            top: 160px;
-            left: 79px;
-        }
-
-        .desktop-btn {
-            display: none;
-        }
-
-        .testimonial-section .left {
-            order: 2;
-        }
-
-        .testimonial-section .right {
-            order: 1;
-        }
-
-        .testimonial-section .mobile-btn {
-            display: inline-flex;
-            align-self: flex-end;
-            order: 3;
-        }
-
-        .testimonial-section .right p {
-            display: inline;
-        }
-
-        .testimonial-section h2 {
-            margin-bottom: 20px;
-        }
-
-        .course-cards-container {
-            flex-direction: column;
-            gap: 80px;
-        }
-
-
-        .course-section .course-cards-container .course-cards h3 {
-            font-size: 24px;
-        }
-
-
-    }
-
-    @media screen and (max-width:800px) {
-        .navbar {
-            display: none;
-        }
-
-        .mobile-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            width: 600px;
-            top: 7px;
-            z-index: 100;
-            transition: all 500ms ease;
-            right: 0px;
-        }
-
-        .mobile-nav.scrolled {
-            background-color: var(--dark-color);
-            box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
-            border-radius: 0 0 8px 8px;
-            top: 0;
-            padding: 8px 100px;
-        }
-
-        .mobile-menu-container {
-            position: fixed;
-            top: 0px;
-            left: 100%;
-            height: 100vh;
-            width: 100%;
-            background-color: var(--dark-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: all 400ms ease;
-            z-index: 200;
-        }
-
-        .mobile-menu-container .close-icon {
-            display: block;
-            position: fixed;
-            top: 32px;
-            right: 100px;
-            opacity: 0;
-            pointer-events: none;
-            transition: all 400ms ease;
-            opacity: 0;
-        }
-
-        .open {
-            left: 0px;
-        }
-
-        .mobile-menu-container.open .close-icon {
-            opacity: 1;
-            pointer-events: all;
-
-        }
-
-        .mobile-menu-container ul li {
-            margin: 30px 0;
-            text-align: center;
-
-        }
-
-        .mobile-menu-container ul li a {
-            font-size: 24px;
-        }
-    }
-
-    @media screen and (max-width:700px) {
-        h2 {
-            font-size: 30px;
-        }
-
-        .hero-section .left h1 {
-            font-size: 36px;
-            line-height: 125%;
-        }
-
-        .wrapper {
-            padding: 0 32px;
-        }
-
-        .hero-section .left p {
-            width: 100%;
-        }
-
-        .hero-section .right img {
-            height: 359px;
-        }
-
-        .hero-section .right {
-            transform: translateX(30px);
-        }
-
-        header {
-            height: 100vh;
-            width: 100%;
-        }
-
-        nav.mobile-nav {
-            padding: 32px;
-            width: 100%;
-        }
-
-        nav.mobile-nav.scrolled {
-            padding: 8px 32px;
-        }
-
-        .mobile-menu-container .close-icon {
-            right: 32px;
-        }
-
-        .app-section .app-buttons {
-            flex-direction: column;
-        }
-
-
-
-        .testimonial-section .left .progressline {
-            top: 239px;
-            left: 79px;
-        }
-
-        .testimonial-section .testimonial-card .info h4 {
-            font-size: 18px;
-        }
-
-        .testimonial-section .testimonial-card .info p {
-            font-size: 14px;
-        }
-
-        .testimonial-section .testimonial-card img {
-            width: 100px;
-            height: 100px;
-
-        }
-
-        .course-section .wrapper {
-            padding: 0;
-        }
-
-        .course-section .course-cards {
-            width: 100%;
-            padding: 0px 20px;
-        }
-
-        .course-section .course-cards .info h3 {
-            text-align: left;
-            width: 70%;
-        }
-
-        .course-section .course-cards .card-img {
-            height: 220px;
-        }
-
-
-        .course-cards-container {
-            flex-direction: column;
-            gap: 60px;
-        }
-
-        footer .links-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 32px;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        footer .links-container .links {
-            margin-bottom: 20px;
-        }
-
-        footer .links-container .links ul,
-        .social,
-        form {
-            /* padding-left: 20px; */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 10px;
-        }
-
-        footer .links-container .links .social {
-            display: block;
-        }
-
-        .copyright {
-            font-size: 14px;
-            text-align: center;
-        }
-
-
-    }
+   /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+   @media (min-width: 1101px) {
+       .wrapper {
+           max-width: 1000px;
+           margin: 0 auto;
+       }
+
+       .course-cards {
+           width: 460px;
+       }
+
+       .course-section .course-cards .card-img {
+           width: 100%;
+       }
+
+       .course-section .course-cards-container .course-cards h3 {
+           text-align: left;
+           font-size: 24px;
+       }
+
+       .navbar {
+           width: 1000px;
+       }
+
+
+   }
+
+   @media screen and (max-width:1100px) {
+       .btn {
+           padding: 12px 32px;
+       }
+
+       h2 {
+           font-size: 40px
+       }
+
+       .wrapper {
+           padding: 0 100px;
+       }
+
+       .navbar {
+           width: 100%;
+           right: 0;
+           left: 0;
+           padding: 36px 100px;
+       }
+
+       .navbar.scrolled {
+           padding: 16px 100px;
+       }
+
+       header {
+           max-height: 1100px;
+       }
+
+       header .wrapper,
+       .hero-section {
+           height: 100%;
+       }
+
+
+       .hero-section {
+           flex-direction: column;
+           padding-top: 100px;
+       }
+
+       .hero-section .left {
+           width: 100%;
+       }
+
+       .hero-section .right {
+           position: absolute;
+           bottom: 0px;
+           right: 0px;
+       }
+
+       .hero-section .achievement-card {
+           position: relative;
+           padding: 80px;
+       }
+
+       .hero-section .right img {
+           height: 580px;
+       }
+
+       .achievement-card.students-enrolled,
+       .achievement-card.overall-Rating {
+           left: unset;
+           top: unset;
+       }
+
+       .testimonial-section .left .testimonial-card:last-child {
+           transform: translateX(0px);
+       }
+
+       .testimonial-section {
+           flex-direction: column;
+           align-items: stretch;
+           margin-bottom: 40px;
+           gap: 50px;
+       }
+
+       .testimonial-section .left .testimonial-card {
+           width: 100%;
+           /* margin-bottom: 40px; */
+       }
+
+       .testimonial-section .left .progressline {
+           top: 160px;
+           left: 79px;
+       }
+
+       .desktop-btn {
+           display: none;
+       }
+
+       .testimonial-section .left {
+           order: 2;
+       }
+
+       .testimonial-section .right {
+           order: 1;
+       }
+
+       .testimonial-section .mobile-btn {
+           display: inline-flex;
+           align-self: flex-end;
+           order: 3;
+       }
+
+       .testimonial-section .right p {
+           display: inline;
+       }
+
+       .testimonial-section h2 {
+           margin-bottom: 20px;
+       }
+
+       .course-cards-container {
+           flex-direction: column;
+           gap: 80px;
+       }
+
+
+       .course-section .course-cards-container .course-cards h3 {
+           font-size: 24px;
+       }
+
+
+   }
+
+   @media screen and (max-width:800px) {
+       .navbar {
+           display: none;
+       }
+
+       .mobile-nav {
+           width: 100%;
+           padding: 10px 50px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           position: fixed;
+           top: 7px;
+           z-index: 100;
+           transition: all 500ms ease;
+           right: 0px;
+       }
+
+       .mobile-nav.scrolled {
+           background-color: var(--dark-color);
+           box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+           border-radius: 0 0 8px 8px;
+           top: 0;
+           padding: 8px 100px;
+       }
+
+       .mobile-menu-container {
+           position: fixed;
+           top: 0px;
+           left: 100%;
+           height: 100vh;
+           width: 100%;
+           background-color: var(--dark-color);
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           transition: all 400ms ease;
+           z-index: 200;
+       }
+
+       .mobile-menu-container .close-icon {
+           display: block;
+           position: fixed;
+           top: 32px;
+           right: 100px;
+           opacity: 0;
+           pointer-events: none;
+           transition: all 400ms ease;
+           opacity: 0;
+       }
+
+       .open {
+           left: 0px;
+       }
+
+       .mobile-menu-container.open .close-icon {
+           opacity: 1;
+           pointer-events: all;
+
+       }
+
+       .mobile-menu-container ul li {
+           margin: 30px 0;
+           text-align: center;
+
+       }
+
+       .mobile-menu-container ul li a {
+           font-size: 24px;
+       }
+
+       .app-section .app-buttons .app-btn {
+           width: 310px;
+       }
+   }
+
+   @media screen and (max-width:700px) {
+       h2 {
+           font-size: 30px;
+       }
+
+       .hero-section .left h1 {
+           font-size: 36px;
+           line-height: 125%;
+       }
+
+       .wrapper {
+           padding: 0 32px;
+       }
+
+       .hero-section .left {
+           width: 70%;
+       }
+
+       .hero-section {
+           align-items: self-start;
+       }
+
+       .hero-section .left p {
+           width: 100%;
+       }
+
+       .hero-section .right img {
+           height: 359px;
+       }
+
+       .hero-section .right {
+           transform: translateX(30px);
+       }
+
+       header {
+           height: 100vh;
+           width: 100%;
+       }
+
+       nav.mobile-nav {
+           padding: 32px;
+           width: 100%;
+       }
+
+       nav.mobile-nav.scrolled {
+           padding: 8px 32px;
+       }
+
+       .mobile-menu-container .close-icon {
+           right: 32px;
+       }
+
+       .app-section .app-buttons {
+           flex-direction: column;
+       }
+
+
+
+       .testimonial-section .left .progressline {
+           top: 239px;
+           left: 79px;
+       }
+
+       .testimonial-section .testimonial-card .info h4 {
+           font-size: 18px;
+       }
+
+       .testimonial-section .testimonial-card .info p {
+           font-size: 14px;
+       }
+
+       .testimonial-section .testimonial-card img {
+           width: 100px;
+           height: 100px;
+
+       }
+
+       .course-section .wrapper {
+           padding: 0;
+       }
+
+       .course-section .course-cards {
+           width: 100%;
+           padding: 0px 20px;
+       }
+
+       .course-section .course-cards .info h3 {
+           text-align: left;
+           width: 70%;
+       }
+
+       .course-section .course-cards .card-img {
+           height: 220px;
+       }
+
+
+       .course-cards-container {
+           flex-direction: column;
+           gap: 60px;
+       }
+
+       footer .links-container {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-bottom: 32px;
+           flex-direction: column;
+           text-align: center;
+       }
+
+       footer .links-container .links {
+           margin-bottom: 20px;
+       }
+
+       footer .links-container .links ul,
+       .social,
+       form {
+           /* padding-left: 20px; */
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           gap: 10px;
+           margin-bottom: 10px;
+       }
+
+       footer .links-container .links .social {
+           display: block;
+       }
+
+       .copyright {
+           font-size: 14px;
+           text-align: center;
+       }
+
+
+
+   }
+
+   @media (min-width: 481px) and (max-width: 699px) {
+       .hero-section {
+           align-items: flex-start;
+       }
+
+       .hero-section {
+           padding-top: 80px;
+       }
+
+       .hero-section .left {
+           width: 60%;
+       }
+
+       .hero-section .right {
+           transform: translateX(38px);
+       }
+
+       .hero-section .right img {
+           height: 317px;
+       }
+
+       .course-section .course-cards {
+           width: 100%;
+           padding: 0px 20px;
+       }
+
+       .course-section .course-cards .card-img {
+           width: 100%;
+       }
+
+       .course-section .course-cards-container {
+           padding-inline: 100px;
+       }
+
+       .course-section .course-cards-container {
+           gap: 63px;
+       }
+
+       .course-section .course-cards .info h3 {
+           width: 80%;
+       }
+
+       .testimonial-section .left .progressline {
+           top: 176px;
+           left: 79px;
+       }
+
+
+   }
+
+
+   /* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+   @media (min-width: 321px) and (max-width: 480px) {
+       .hero-section .left h1 {
+           font-size: 31px;
+       }
+
+       .navbar ul li a,
+       .mobile-menu-container ul li a {
+           font-size: 16px;
+           font-weight: 500;
+       }
+
+       .hero-section .left p,
+       section p {
+           font-size: 14px;
+       }
+
+       h2 {
+           font-size: 23px;
+       }
+
+       .hero-section .right img {
+           height: 279px;
+       }
+
+       .course-section .course-cards-container {
+           gap: 50px;
+           padding: 0 14px;
+       }
+
+       .course-section .course-cards .card-img {
+           width: 100%;
+       }
+
+       .course-section .course-cards-container .course-cards h3 {
+           font-size: 16px;
+       }
+
+       .testimonial-section {
+           margin-top: 50px;
+       }
+
+       .testimonial-section .testimonial-card .content {
+           padding: 20px 16px;
+           font-size: 16px;
+           line-height: 124%;
+       }
+
+       .testimonial-section .testimonial-card .info {
+           padding: 0px 16px;
+       }
+
+       .testimonial-section .testimonial-card img {
+           right: 13px;
+           bottom: 5px;
+           width: 70px;
+           height: 70px;
+       }
+
+       .testimonial-section .left .testimonial-card {
+           width: 100%;
+           height: 159px;
+           height: 159px;
+       }
+
+       .testimonial-section .left .progressline {
+           width: 22px;
+           height: 408px;
+           top: 190px;
+           left: 79px;
+       }
+   }
+
+   @media screen and (max-width:320px) {
+       h2 {
+           font-size: 23px;
+       }
+
+       .hero-section {
+           padding-block: 40px;
+       }
+
+       .hero-section .left h1 {
+           font-size: 30px;
+       }
+
+       .hero-section .right img {
+           display: none;
+       }
+
+       .course-section .course-cards .card-img {
+           width: 100%;
+       }
+
+       .testimonial-section {
+           margin-top: 50px;
+       }
+
+       .course-section .course-cards-container .course-cards h3 {
+           font-size: 20px;
+       }
+
+       .testimonial-section .testimonial-card .content {
+           padding: 20px 13px;
+           font-size: 15px;
+       }
+
+       .testimonial-section .testimonial-card img {
+           width: 80px;
+           height: 80px;
+       }
+
+       .testimonial-section .left .progressline {
+           top: 267px;
+           left: 79px;
+       }
+
+       .app-section .app-buttons .app-btn {
+           width: 100%;
+       }
+   }
